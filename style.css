@@ -1,0 +1,400 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color: rgb(250, 250, 250);
+}
+.ftr-dd{
+    height:100px;
+    width:100px;
+}
+.dsktp-bx{
+    height:100%;
+    width:100%;
+}
+#menu{
+    display:flex;
+    flex-direction:row;
+    gap:0px;
+    justify-content: left;
+    width:100%;
+    margin-top: 30px;
+    margin-left:30px;
+    font-family: "Epilogue";
+    /*position: relative;
+    left: 0px;*/
+}
+h2{
+    font-size: 30px;
+}
+#ftrs,
+#cmpny{
+    font-size: 13px;
+    position: relative;
+    top:6px;
+    left: 50px;
+    border: none;
+    background-color: rgb(250, 250, 250);
+    font-weight: 400;
+}
+.careers{
+    position: relative;
+    top:10px;
+    left: 160px;
+    font-size: 11px;
+    cursor: pointer;
+    font-weight: 300;
+    
+}
+.abt{
+    position: relative;
+    top:10px;
+    left: 200px;
+    font-size: 11px;
+    cursor: pointer;
+    font-weight: 300;
+}
+#ftrs > span{
+    position: relative;
+    left:5px;
+}
+#cmpny > span{
+    position: relative;
+    left:5px;
+}
+#list1,
+#list2{
+    display:none;
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+#list1{
+    text-align: center;
+    padding-top: 20px;
+    line-height: 30px;
+}
+#l1{
+    background-color:white;
+    width:150px;
+    height:150px;
+    border-radius: 10px;
+    display:none;
+    position: relative;
+    left: -30px;
+    top: 17px;
+}
+#list1  a[href="#"]{
+    font-size: 14px;
+}
+img[src="images/icon-todo.svg"],
+img[src="images/icon-calendar.svg"],
+img[src="images/icon-reminders.svg"],
+img[src="images/icon-planning.svg"]{
+    position: relative;
+    left: -10px;
+}
+.rmdr{
+    position: relative;
+    left: 9px;
+}
+.cmpny-dd{
+    width:0px;
+    height:0px;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+#l2{
+    background-color: white;
+    width:100px;
+    height:110px;
+    border-radius: 10px;
+    display:none;
+    position: relative;
+    left: 40px;
+    top: 15px;
+    
+}
+#list2{
+    text-align: left;
+    padding-top: 20px;
+    padding-left:15px;
+    line-height: 25px;
+    font-size: 14px;
+}
+#ftrs:hover,
+#cmpny:hover{
+    cursor:pointer;
+}
+.lgn-rgs{
+    position: relative;
+    left:999px;
+}
+.lgn-rgs > a{
+    font-size: 13px;
+    position: relative;
+    left:-30px;
+}
+.lgn-rgs > button{
+    height: 35px;
+    width: 90px;
+    border-radius: 12px;
+    background-color: rgb(250, 250, 250);
+    border-color: black;
+    font-weight: 500;
+    cursor: pointer;
+}
+.text-content{
+    display:flex;
+    flex-direction:column;
+}
+.text-content > h1{
+    font-family: "Epilogue";
+    font-size: 70px;
+    margin-right:920px;
+    position: relative;
+    top: 86px;
+    left: 120px;
+}
+.text-content > p{
+    font-family: "Epilogue";
+    font-size: 17px;
+    position: relative;
+    top: 130px;
+    left: 120px;
+    margin-right: 1000px;
+    line-height: 28px;
+}
+.text-content > button{
+    background-color: black;
+    color:white;
+    height:50px;
+    width:140px;
+    border-radius: 10px;
+    border:none;
+    position: relative;
+    top: 170px;
+    left:120px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Epilogue";
+    cursor: pointer;
+}
+.grey-imgs{
+    position: relative;
+    top: 280px;
+    left: 120px;
+    word-spacing: 30px;
+    /*height: 60px;
+    width: 60px;*/
+}
+img[src="images/image-hero-desktop.png"]{
+    height:600px;
+    width:470px;
+    position: relative;
+    top: -320px;
+    left: 780px;
+}
+.text-content > button:hover{
+    background-color: white;
+    color: black;
+    border-color: black;
+    border:solid 1px;
+}
+#mobile-bx{
+    opacity: 0;
+}
+@media screen and (min-device-width:300px) and (max-device-width:399px) {
+    html,body{
+        overflow-x: hidden;
+    }
+    .dsktp-bx{
+        opacity: 0;
+    }
+    #mobile-bx{
+        opacity: 1;
+        position: relative;
+        top:-410vw;
+        left:5vw;
+    }
+    #mobile-bx > h1{
+        position: relative;
+        top: 6vw;
+        left:0vw;
+        font-size: 12vw;
+        font-family: "Epilogue";
+    }
+    #menu-btn{
+        position: absolute;
+        top:7vw;
+        left:76vw;
+        z-index: 2;
+    }
+    #bar1,
+    #bar2,
+    #bar3{
+        height:1.15vw;
+        width:12vw;
+        background-color: black;
+        margin: 1.3vw;
+        
+    }
+    #nav-links{
+        position:fixed;
+        left:31vw;
+        top:-30vw;
+        background-color: white;
+        height:210vw;
+        width:70%;
+        opacity: 1;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform:translateY(-100%);
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        gap: 10vw;
+    }
+    #lst1{
+        position:relative;
+        top:-7vw;
+        left:0vw;
+        display:none;
+        line-height: 9vw;
+        font-size: 6vw;
+        list-style-type: none;
+        height:20vw;
+        font-family: "Epilogue";
+    }  
+    #fbtn{
+        position: relative;
+        top: 0vw;
+        left:-14vw;
+        background-color:transparent;
+        border: none;
+        font-size: 6vw;
+        
+    }
+    #cbtn{
+        position: relative;
+        top: 0vw;
+        left:-13vw;
+        background-color:transparent;
+        border: none;
+        font-size: 6vw;
+    }
+    #lst2{
+        position:relative;
+        top:-7vw;
+        left:0vw;
+        display:none;
+        line-height: 9vw;
+        font-size: 6vw;
+        list-style-type: none;
+        height: 12vw;
+        font-family: "Epilogue";
+    }
+    #nav-links a[href="#1"]{
+        position: relative;
+        left:-15vw;
+        font-size: 6vw;
+        font-family: "Epilogue";
+    }
+    #nav-links a[href="#2"]{
+        position: relative;
+        left:-17vw;
+        font-size: 6vw;
+        font-family: "Epilogue";
+    }
+    #fbtn > span{
+        position: relative;
+        left:3vw;
+    }
+    #cbtn > span{
+        position: relative;
+        left:3vw;
+    }
+    #menu-btn.active #bar1{
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+    #menu-btn.active #bar2 {
+        opacity: 0;
+        
+    }
+    #menu-btn.active #bar3 {
+        transform: rotate(-45deg) translate(5px, -6px);
+    }
+    #menu-btn.active + #nav-links {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    #menu-btn.active + #overlay {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    #overlay {
+        position: fixed;
+        top: 0vw;
+        left: 0vw;
+        width: 100vw;
+        height: 200vw;
+        background-color: rgba(0, 0, 0, 0.254); /* Semi-transparent black overlay */
+        opacity: 0; /* Initially hidden */
+        pointer-events: none; /* Allows interactions with elements below it */
+        transition: opacity 0.3s ease; /* Add a transition for the overlay */
+        
+    }
+    img[src="images/image-hero-mobile.png"]{
+        height: 70vw;
+        width: 100vw;
+        position: relative;
+        top: 10vw;
+        left: -5vw;
+    }
+    #mobile-bx .title{
+        margin-right: -20vw;
+        font-size: 9.5vw;
+        position: relative;
+        top:18vw;
+        left:-1.3vw;
+
+    }
+    .des{
+        font-family: "Epilogue";
+        position: relative;
+        top:23vw;
+        font-size:4.3vw;
+        margin-right:12vw;
+        text-align: center;
+        line-height:6vw;
+    }
+    #lmbtn{
+        position: relative;
+        top: 30vw;
+        left: 28vw;
+        color:white;
+        background-color: black;
+        height: 12vw;
+        width: 30vw;
+        border-radius: 3vw;
+        border: none;
+    }
+    .dt-imgs{
+        position: relative;
+        top:40vw;
+        left:2vw;
+        word-spacing: 7vw;
+    }
+    img[src="images/client-databiz.svg"],
+    img[src="images/client-audiophile.svg"],
+    img[src="images/client-meet.svg"],
+    img[src="images/client-maker.svg"]{
+        width:15vw;
+        
+    }
+}
